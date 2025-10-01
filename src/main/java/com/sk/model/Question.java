@@ -34,5 +34,5 @@ public class Question {
 	
 	//option mapping
 	@OneToMany(mappedBy = "question", cascade = CascadeType.ALL, orphanRemoval = true)
-	private List<Option> options = new ArrayList<>();
+	private List<QuestionOption> options = new ArrayList<>();
 }

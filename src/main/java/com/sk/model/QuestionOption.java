@@ -12,18 +12,16 @@ import lombok.Setter;
 @Entity
 @Setter
 @Getter
-public class Option {
+public class QuestionOption {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
-	
-	private String text;//option
-	private Boolean correct;
-	
-	@ManyToOne
-	@JoinColumn(name="question_id")
-	private Question question;
-	
-	
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    private String text;
+    private boolean correct;
+
+    @ManyToOne
+    @JoinColumn(name = "question_id")
+    private Question question;
 }

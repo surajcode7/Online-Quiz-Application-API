@@ -6,12 +6,10 @@ import lombok.Setter;
 
 @Setter
 @Getter
-public class OptionDto {
+public class OptionDtoNoAns {
 
-	private Long id;
+private Long id;
 	
 	@NotBlank(message = "option text is required")
 	private String text;
-	
-	private boolean correct;
 }

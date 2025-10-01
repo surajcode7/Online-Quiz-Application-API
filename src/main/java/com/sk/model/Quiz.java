@@ -22,7 +22,8 @@ public class Quiz {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
-	private String title;//Quiz title
+	//Quiz title
+	private String title;
 	
 	//question mapping 
 	@OneToMany(mappedBy = "quiz", cascade = CascadeType.ALL, orphanRemoval = true)

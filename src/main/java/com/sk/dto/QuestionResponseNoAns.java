@@ -7,9 +7,10 @@ import lombok.Setter;
 
 @Setter
 @Getter
-public class QuizResponse {
+public class QuestionResponseNoAns {
 
 	private Long id;
-	private String title;
-	private List<QuestionResponse> questions;
+	private String text;
+	private String type;
+	private List<OptionDtoNoAns> options;
 }

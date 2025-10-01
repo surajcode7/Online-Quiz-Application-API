@@ -10,7 +10,7 @@ public class AnswerDto {
 
 	@NotNull(message = "Question id is required")
 	private Long questionId;
-	
+
 	@NotNull(message = "Option id is required")
 	private Long optionId;
 }
